@@ -1,0 +1,61 @@
+SkyLink-Analysis-By-Power-BI
+📘 Project Overview
+As a Business Intelligence Analyst at Gulf Researcher, you are tasked with analyzing customer churn rates for SkyLink, a telecommunication company. The goal of this project is to uncover the reasons behind customer churn and provide actionable insights to reduce it. Using Microsoft Power BI, a visually compelling interactive dashboard was developed to help SkyLink better understand and manage customer churn.
+
+This analysis addresses specific business questions raised by SkyLink and focuses on identifying key drivers of churn to enhance retention strategies.
+
+🧼 Data Cleaning (Transformation)
+Churn Category: Replaced blank values with "No Churning".
+Churn Reason: Replaced blank values with "No Reason As No Churning".
+New Column: Created a column to mark whether the customer has churned (Churn Label = "Yes"), simplifying churn-related calculations.
+📊 Key Analysis & Business Questions
+1. 🔢 Current Churn Rate
+Formula: (Total Churned Customers / Total Customers) * 100
+Churn Rate = 30.6%
+Shown using a pie chart with CustomerID and Churn Label.
+2. 🏷 Churn Categories
+The most common churn category is "Competitor".
+3. 🗺 Churn Rate by State
+Churn varies significantly by state.
+Highest churn rate is in: California (CA).
+4. 🎂 Churn Rate by Age Group
+Under 30: 26.15%
+Over 65: 43.44%
+Insight: Churn increases with age.
+5. 👥 Churn by Group Size
+Group size = 3 has the lowest churn rate = 5.63%.
+6. 🧾 Contract Type vs. Churn
+Customers with monthly contracts churn the most.
+Customers with two-year contracts churn the least.
+7. 📶 Unlimited Data Plan Impact
+Customers without unlimited plans are more likely to churn.
+Churn rate peaks when data usage hits 41 GB.
+8. 🌍 International Activity & Churn
+Higher international usage is linked to higher churn rates.
+9. 👤 Customer Profile Insights
+Payment Method:
+Direct Debit → Higher churn
+Paper Check → Lower churn
+Contract Type:
+Monthly → More churn
+Two-Year → Less churn
+Account Length:
+Shorter duration → Higher churn
+🧮 Specific Measures & Deep Dives
+🎯 Targeted Group Churn
+Customers not in a group, aged 50, account ≤ 12 months
+→ Churn Rate = 48.57%
+📞 Service Calls & Churn
+Avg. number of service calls for customers on:
+Monthly contract + Direct Debit = 1.57
+Churn Rate for same group = 58.47%
+💸 Extra Data Charges
+Customers without unlimited data, consuming ≥10GB
+→ Average extra data charge = $30.20
+🛠 Tools Used
+Microsoft Power BI
+Microsoft Excel
+🗂 Deliverables
+✅ SkyLink_Churn_Analysis.pbix – Power BI interactive report
+✅ SkyLink_Churn_Questions.xlsx – Excel file answering the 13 business questions
+✅ README.md – This documentation file
